@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+  iris:
+    container_name: my-iris
+    image: store/intersystems/iris-community:2020.1.0.215.0
+    volumes:
+    #Change /home/user1 to your directory
+     - /home/user1:/durable
+    environment:
+     - ISC_DATA_DIRECTORY=/durable
+    ports:
+     - "9092:52773"
+     - "9091:51773"
