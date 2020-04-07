@@ -1,6 +1,6 @@
 kompose convert -f iris-compose.yaml
 
-#add service acconut
+#add service account to allow privilege container
 
 #if have dynamic provisioning, skip pvc
 
