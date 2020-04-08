@@ -44,7 +44,9 @@ Login with
 user:_SYSTEM 
 password: SYS
 ```
-After successful login, the application may ask you to change the password.
+After successful login, the application may ask you to change the password. 
+
+![Screenshot](images/iris.png)
 
 NOTE: if the page doesn't show, execute the following on the IRIS pod
 
