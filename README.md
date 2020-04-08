@@ -40,6 +40,7 @@ You should see this page
 
 **NOTE**: if the login doesn't display, execute the following on the IRIS pod
 > ```oc exec [pod] -- iris session IRIS ```
+*TODO*: add a post-start hook or readiness probe to ensure the session is up and running
 
 Login with
 
