@@ -25,12 +25,12 @@ oc apply -f iris-deployment-final.yaml
 
 Note: If your cluster supports dynamic storage provisioning, you can skip the creation of the PersistentVolumeClaim and modify the Deployment resource volume spec.
 
-To view the application
-
+To view the application, run the following command, 
 ```
 IRIS_ROUTE=$(oc get route iris -o template  --template='{{ .spec.host }}')
+echo http://$(echo $IRIS_ROUTE)/csp/sys/UtilHome.csp
 ```
-view at http://$IRIS_ROUTE/csp/sys/UtilHome.csp
+grab the generated URL and paste in your favourite browser.
 
 You should see this page
 
@@ -42,6 +42,7 @@ Login with
 user:_SYSTEM 
 password: SYS
 ```
+After successful login, the application may ask you to change the password.
 
 NOTE: if the page doesn't show, execute the following on the IRIS pod
 ```
