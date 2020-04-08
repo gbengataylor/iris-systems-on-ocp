@@ -23,7 +23,7 @@ Create the Service Account. This following command needs to be run by an admin-l
 
 Once that is completed successfully **without errors**, you are now ready to install the software on OpenShift.
 
-If using file storage, you can run the following command to install. This will create deployment with persistent storagge
+If using file storage, you can run the following command to install. This will create deployment with persistent storage
 
 > ```oc apply -f config/ ```
 
