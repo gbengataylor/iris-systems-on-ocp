@@ -1,4 +1,4 @@
-**Disclaimer**: *This is not production-ready. It is a simple proof of concept. Considerations such as dynamic storag provisioning and HA deployments have not been addressed*
+**Disclaimer**: *This is not production-ready. It is a simple proof of concept. Considerations such as graceful shutdowns, liveness/readiness probes, dynamic storage provisioning, and HA deployments have not been addressed*
 
 This repo deploys the Intersystems IRIS Data Platform Community Edition found [here](https://hub.docker.com/_/intersystems-iris-data-platform/plans/222f869e-567c-4928-b572-eb6a29706fbd?tab=instructions)
 
