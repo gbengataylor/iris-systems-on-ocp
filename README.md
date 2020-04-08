@@ -9,7 +9,7 @@ The repo includes the Kubernetes & OpenShift resources (service account, pvc, se
 
 the following kubernetes resources were generated - PersistentVolumeClaim, Service, and Deployment.
 
-The container as-is needs to run as a privileged container. By default, this is disallowed on OpenShift. To deploy on a cluster where the OpenShift user can run a privileged container, a new service account with the appropriate security context contraints should be created. The generated Kubernetes Deployment resource is updated to reference the new service account.
+The container as-is needs to run as *a privileged container*. **By default, this is disallowed on OpenShift**. To deploy on a cluster where the OpenShift user can run a privileged container, a new service account with the appropriate security context contraints should be created. The generated Kubernetes Deployment resource is updated to reference the new service account.
 
 Finally, an OpenShift Route was created to allow external traffic to the IRIS Data Platform.
 
