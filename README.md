@@ -34,7 +34,7 @@ view at http://$IRIS_ROUTE/csp/sys/UtilHome.csp
 
 You should see this page
 
-![Screenshot](.images/irislogin.png)
+![Screenshot](images/irislogin.png)
 
 Login with
 
