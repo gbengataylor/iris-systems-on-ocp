@@ -38,6 +38,9 @@ You should see this page
 
 ![Screenshot](images/irislogin.png)
 
+**NOTE**: if the login doesn't display, execute the following on the IRIS pod
+> ```oc exec [pod] -- iris session IRIS ```
+
 Login with
 
 ```
@@ -48,6 +51,4 @@ After successful login, the application may ask you to change the password.
 
 ![Screenshot](images/iris.png)
 
-NOTE: if the page doesn't show, execute the following on the IRIS pod
 
-> ```oc exec [pod] -- iris session IRIS ```
