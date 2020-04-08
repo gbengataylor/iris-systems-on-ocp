@@ -13,26 +13,31 @@ The container as-is needs to run as *a privileged container*. **By default, this
 
 Finally, an OpenShift Route was created to allow external traffic to the IRIS Data Platform.
 
-To deploy on OpenShift, run the following commands
+To deploy on OpenShift, ensure you are logged into a cluster using the oc client and have created a new project
+
+> ```oc new-project iris-data-platform```
+
+Create the Service Account. This following command needs to be run by an admin-level user in OpenShift with the permissions to add the anyuidd security context constraint. 
 
 > ```./iris-service-account-final.sh```
 
-> ```oc apply -f iris-claim0-persistentvolumeclaim-final.yaml ```
+Once that is completed successfully **without errors**, you are now ready to install the software on OpenShift.
 
-> ```oc apply -f iris-service-final.yaml```
+If using file storage, you can run the following command to install. This will create deployment with persistent storagge
 
-> ```oc apply -f iris-route-final.yaml```
+> ```oc apply -f config/ ```
 
-> ```oc apply -f iris-deployment-final.yaml```
+However, if using a different storage class, you can create a deployment using ephemeral storage i.e. no persistence.
 
+> ```oc apply -f config-ephemeral/ ```
 
-To view the application, run the following command, 
+To view the application, run the following command to retrieve the URL to the IRIS Data Platform Running on OpenShift
 
 > ```IRIS_ROUTE=$(oc get route iris -o template  --template='{{ .spec.host }}')```
 
 > ```echo http://$(echo $IRIS_ROUTE)/csp/sys/UtilHome.csp```
 
-grab the generated URL and paste in your favourite browser.
+Copy the generated URL and paste in your favourite browser.
 
 You should see this page
 
