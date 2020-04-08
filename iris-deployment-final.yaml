@@ -31,9 +31,6 @@ spec:
         image: store/intersystems/iris-community:2020.1.0.215.0
         imagePullPolicy: ""
         name: my-iris
-        # command: ["iris"]
-        # command: ["/iris-main"]
-        # args: ["session", "IRIS"]
         ports:
         - containerPort: 52773
         - containerPort: 51773
