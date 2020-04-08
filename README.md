@@ -1,4 +1,4 @@
-**Disclaimer**: *This is not production-ready. It is a simple proof of concept. Considerations such as graceful shutdowns, liveness/readiness probes, dynamic storage provisioning, HA deployments etc have not been addressed*
+**Disclaimer**: *This is not production-ready. It is a simple proof of concept. Considerations such as graceful shutdowns, liveness/readiness probes, dynamic storage provisioning, HA deployments etc have not been addressed. Also, the container had to be run as privileged which is usually not advisable*
 
 This repo deploys the Intersystems IRIS Data Platform Community Edition found [here](https://hub.docker.com/_/intersystems-iris-data-platform/plans/222f869e-567c-4928-b572-eb6a29706fbd?tab=instructions) on OpenShift, a certified Kubernetes platform
 
